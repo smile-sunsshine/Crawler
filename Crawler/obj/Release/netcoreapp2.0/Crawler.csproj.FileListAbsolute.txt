@@ -1,0 +1,10 @@
+E:\Project\HGX\Crawler\Crawler\bin\Release\netcoreapp2.0\Crawler.deps.json
+E:\Project\HGX\Crawler\Crawler\bin\Release\netcoreapp2.0\Crawler.runtimeconfig.json
+E:\Project\HGX\Crawler\Crawler\bin\Release\netcoreapp2.0\Crawler.runtimeconfig.dev.json
+E:\Project\HGX\Crawler\Crawler\bin\Release\netcoreapp2.0\Crawler.dll
+E:\Project\HGX\Crawler\Crawler\bin\Release\netcoreapp2.0\Crawler.pdb
+E:\Project\HGX\Crawler\Crawler\obj\Release\netcoreapp2.0\Crawler.csproj.CoreCompileInputs.cache
+E:\Project\HGX\Crawler\Crawler\obj\Release\netcoreapp2.0\Crawler.AssemblyInfoInputs.cache
+E:\Project\HGX\Crawler\Crawler\obj\Release\netcoreapp2.0\Crawler.AssemblyInfo.cs
+E:\Project\HGX\Crawler\Crawler\obj\Release\netcoreapp2.0\Crawler.dll
+E:\Project\HGX\Crawler\Crawler\obj\Release\netcoreapp2.0\Crawler.pdb

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "HtmlAgilityPack/1.5.5": {
+      "HtmlAgilityPack/1.6.0": {
         "type": "package",
         "dependencies": {
           "System.Net.Http": "4.3.2",
@@ -219,6 +219,18 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -1106,12 +1118,12 @@
     }
   },
   "libraries": {
-    "HtmlAgilityPack/1.5.5": {
-      "sha512": "hpFIMzdcovUVV1UCk1XpSrRUay5pwqCWiCubrUUqbQniVDOdjdbsTVV4+hQm83sWsrHivftM/0aLN02w1iQ2WQ==",
+    "HtmlAgilityPack/1.6.0": {
+      "sha512": "+jNhj2wQI59RiHNcbwI5F7zNv/kpPdI6PAunOru36HUxJWcNSgeUTznmxbt/fyg04jQC9ZlkzrACIGXwag3aFg==",
       "type": "package",
-      "path": "htmlagilitypack/1.5.5",
+      "path": "htmlagilitypack/1.6.0",
       "files": [
-        "htmlagilitypack.1.5.5.nupkg.sha512",
+        "htmlagilitypack.1.6.0.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net20/HtmlAgilityPack.dll",
         "lib/Net20/HtmlAgilityPack.pdb",
@@ -1125,18 +1137,25 @@
         "lib/Net45/HtmlAgilityPack.XML",
         "lib/Net45/HtmlAgilityPack.dll",
         "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
         "lib/NetCore45/HtmlAgilityPack.dll",
         "lib/NetCore45/HtmlAgilityPack.pdb",
         "lib/netstandard1.3/HtmlAgilityPack.dll",
         "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
         "lib/netstandard1.6/HtmlAgilityPack.dll",
         "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
         "lib/netstandard2.0/HtmlAgilityPack.dll",
         "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
         "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
         "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
         "lib/uap10.0/HtmlAgilityPack.dll",
         "lib/uap10.0/HtmlAgilityPack.pdb",
         "lib/uap10.0/HtmlAgilityPack.pri"
@@ -1610,6 +1629,22 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Polly/5.3.1": {
+      "sha512": "vEAUy16SgCevG0w7POAwQ4jVJ7HFEKibuzORrqg1L8pIpfgFjJbScxHE0BU1CbkRS/tTxshEe0dzDS53oJCLiQ==",
+      "type": "package",
+      "path": "polly/5.3.1",
+      "files": [
+        "lib/net45/Polly.dll",
+        "lib/net45/Polly.pdb",
+        "lib/net45/Polly.xml",
+        "lib/netstandard1.1/Polly.deps.json",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "polly.5.3.1.nupkg.sha512",
+        "polly.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3939,8 +3974,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "HtmlAgilityPack >= 1.5.5",
+      "HtmlAgilityPack >= 1.6.0",
       "Microsoft.NETCore.App >= 2.0.0",
+      "Polly >= 5.3.1",
       "System.Text.Encoding.CodePages >= 4.4.0"
     ]
   },
@@ -3993,6 +4029,10 @@
             "target": "Package",
             "version": "4.4.0"
           },
+          "Polly": {
+            "target": "Package",
+            "version": "5.3.1"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -4000,7 +4040,7 @@
           },
           "HtmlAgilityPack": {
             "target": "Package",
-            "version": "1.5.5"
+            "version": "1.6.0"
           }
         },
         "imports": [
